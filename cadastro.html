@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+    <link rel="stylesheet" type="text/css" href="css/Cadastro.css">
+</head>
+
+<body>
+    <header>
+        <nav id="topo">
+            <div id="logo">
+                <img src="img/LogoIT1.png" alt="LogoItInformation">
+            </div>
+            <ul id="menu">
+                <li><b><a href="Home.html">Home</a></b></li>
+                <li><b><a href="sobre.html">Sobre</a></b></li>
+                <li><b><a href="noticias.html" target="_blank">Notícias</a></b></li>
+                <li><b><a href="contato.html">Contato</a></b></li>
+                <li><b><a href="login.html" target="blank">Login</a></b></li>
+                <li><b><a href="galeria.html" target="_blank">Galeria</a></b></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="corpo">
+        <div id="linha"></div>
+        <p>Cadastre-se</p>
+        <form action="https://formsubmit.co/itinformation83@gmail.com" method="post" id="form1">
+            <label>
+                <span>Nome Completo<a class="a">*</a></span>
+                <input type="text" name="Nome" minlength="10" required>
+            </label>
+
+            <label>
+                <span>Email<a class="a">*</a></span>
+                <input type="email" name="email" required>
+            </label>
+
+            <label>
+                <span>Senha<a class="a">*</a></span>
+                <input type="password" name="password" required maxlength="8" minlength="8">
+            </label>
+
+            <button type="submit" id="botao">Finalizar</button>
+        </form>
+    </div>
+
+
+    <footer id="rodape">
+        <div id="icones">
+            <div id="linha-footer"></div>
+            <ul>
+                <li id="facebook"><a href="https://www.facebook.com/It-Information-104212845621728" target="_blank"><img src="img/icons8-facebook-50.png" alt="ÍconeFacebook"></a></li>
+                <li id="instagram"><a href="https://www.instagram.com/itinformation83/" target="_blank"><img src="img/icons8-instagram-50.png" alt="ÍconeInstagram"></a></li>
+                <li id="twiter"><a href="https://twitter.com/ItInformation7" target="_blank"><img src="img/icons8-twitter-quadrado-50.png" alt="ÍconeTwitter"></a></li>
+            </ul>
+            <div id="back-to-top">
+                <img id="botao-img" src="img/back-to-top.png" alt="BotãoDeVoltarAoTopo">
+            </div>
+        </div>
+    </footer>
+    <script>
+        var botao = window.document.getElementById('botao-img')
+        botao.addEventListener('click', voltarTopo)
+
+        //função de voltar ao topo
+        function voltarTopo(){
+            window.scrollTo(0, 0)
+        }
+    </script>
+<!--<script src="js/Login.js"></script>-->
+</body>
+</html>

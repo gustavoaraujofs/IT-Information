@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato</title>
+        <link rel="stylesheet" type="text/css" href="css/Contato.css">
+    </head>
+
+    <body>
+        <header>
+            <nav id="topo">
+                <div id="logo">
+                    <img src="img/LogoIT1.png" alt="LogoItInformation">
+                </div>
+                <ul id="menu">
+                    <li><b><a id="home-menu" href="Home.html">Home</a></b></li>
+                    <li><b><a id="home-sobre" href="sobre.html">Sobre</a></b></li>
+                    <li><b><a id="home-noticias" href="noticias.html">Notícias</a></b></li>
+                    <li><b><a id="home-contato" href="contato.html">Contato</a></b></li>
+                    <li><b><a id="home-login" href="login.html">Login</a></b></li>
+                    <li><b><a id="home-galeria" href="galeria.html">Galeria</a></b></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="corpo">
+            <p>Fale Conosco</p>
+            <form action="https://formsubmit.co/itinformation83@gmail.com" method="post" id="form1">
+                <div id="radios">
+                    
+                    <label>
+                        <input id="radio" type="radio" name="Tipo de Mensagem" value="Sugestão" required>  Sugestão
+                    </label>
+                    
+                    <label>
+                        <input id="radio1" type="radio" name="Tipo de Mensagem" value="Crítica" required>  Crítica
+                    </label>
+                    
+                    <label>
+                        <input id="radio2" type="radio" name="Tipo de Mensagem" value="Duvida" required>  Duvida
+                    </label>
+                    
+                    <label>
+                        <input id="radio3" type="radio" name="Tipo de Mensagem" value="Feedback" required>  Feedback
+                    </label>
+                </div>
+
+                <div id="nome">
+                    <input type="text" placeholder="Digite seu Nome" name="Nome" id="Nome" required minlength="10">
+                </div>
+                <div id="email">
+                    <input type="email" placeholder="Digite seu Email" name="email" id="Email" required>
+                </div>
+                <div id="mensagem">
+                    <textarea name="Mensagem" id="Mensagem" placeholder="Digite sua Mensagem" required></textarea>
+                </div>
+
+                <div id="boton">
+                    <button type="submit" id="botao">Enviar</button>
+                </div>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/tranks.html">
+                <input type="hidden" name="_captcha" value="false">
+
+            </form>
+        </div>
+
+
+        <footer id="rodape">
+            <!--<div id="linha-footer"></div>-->
+            <div id="icones">
+                <div id="linha-footer"></div>
+                <ul>
+                    <li id="facebook"><a href="#"><img src="img/icons8-facebook-50.png" alt="ÍconeFacebook"></a></li>
+                    <li id="instagram"><a href="#"><img src="img/icons8-instagram-50.png" alt="ÍconeInstagram"></a></li>
+                    <li id="twiter"><a href="#"><img src="img/icons8-twitter-quadrado-50.png" alt="ÍconeTwitter"></a></li>
+                </ul>
+                <div id="back-to-top">
+                    <img id="botao-img" src="img/back-to-top.png" alt="BotãoDeVoltarAoTopo">
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="js/contato.js"></script>
+</html>
