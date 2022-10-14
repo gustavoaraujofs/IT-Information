@@ -1,0 +1,108 @@
+/*Config gerais*/
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+/*header*/
+#topo-tranks{
+    top: 0;
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+}
+
+#logo1{
+    background-color: grey;
+    height: 76px;
+    width: 100px;
+}
+
+#logo1 img{
+    width: 100px;
+}
+
+/*corpo*/
+#corpo-tranks{
+    width: 100%;
+    height: 800px;
+    background-color: rgba(43, 58, 58, 0.850);
+    justify-content: center;
+    display: flex;
+}
+
+#text-1{
+    padding-top: 300px;
+    height: 150px;
+    justify-content: center;
+    display: flex;
+}
+#text-1 h1{
+    font-size: 50px;
+    color: black;
+    text-align: center;
+}
+
+#contato{
+    justify-content: center;
+    display: flex;
+    top: 500px;
+    position: absolute;
+    height: 35px;
+}
+
+#contato a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: white;
+    background-color:rgb(77, 177, 92);
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 4px 35px;
+}
+
+/*rodapé da página*/
+#rodape{
+    background-color: rgba(15, 68, 71, 1);
+    height: 150px;
+	width: 100%;
+}
+
+#icones{
+	width: 204px;
+	position: relative;
+	top: 30px;
+
+	border-top: 2px solid white;
+
+	margin: auto auto;
+	display: flex;
+	justify-content: center;
+	
+}
+#icones li{
+	position: relative;
+	right: 18px;
+	margin: 0 1px;
+	border: 1px;  
+    display: inline-block;
+}
+
+#botao-img{
+	cursor: pointer;
+	position: relative;
+	border: 1px;
+	float: right;
+	margin-top: -45px;
+	right: 15px;
+    max-width: 60px;
+}
+
+@media(max-width: 680px){
+    #text-1 h1{
+        font-size: 45px;
+    }
+}

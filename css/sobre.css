@@ -1,0 +1,347 @@
+/*Config gerais*/
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+*{
+	box-sizing: border-box;
+}
+
+/*header*/
+#topo{
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+}
+#menu li{
+    font-family: Arial;
+    padding-right: 25px;
+    font-size: 18px;
+    display: inline-block
+}
+#menu {
+    list-style: none;
+    float: right;
+    margin-right: 18px;
+    margin-top: 38px;
+}
+#menu a{
+	font-weight: bold;
+}
+#logo{
+    height: 100%;
+    float: left;
+    width: 15%;
+}
+#logo img{
+    margin-left: 50px;
+    float: left;
+    width: 100px;
+}
+
+/*Banner*/
+
+#banner-sobre{
+	background-color: white;
+	width: 100%;
+	height: 390px;
+}
+#banner-sobre img{
+    width: 100%;
+    height: 390px;
+}
+#banner-sobre-text{
+	font-family: italic;
+    position: absolute;
+    top: 130px;
+    left: 40px;
+	margin:170px 0;
+}
+#banner-sobre h1{
+    position: absolute;
+    width: 800px;
+    color: white;
+    font-size: 60px;
+}
+
+/*Parágrafo do corpo do documento*/
+#text-sobre{
+	font-size: 24px;
+    text-align: justify;
+    width: 100%;
+	height: 500px;
+	padding: 30px;
+	box-sizing:border-box;
+	max-width: 850px;
+	max-height: 850px;
+	min-width: 320px;
+	min-height: 360px;
+	margin: 100px auto;
+}
+
+#text-sobre span{
+	font-style:italic; 
+	float: right;
+}
+/*linha para dividir o parágrafo da equipe*/
+#linha-sobre{
+    background-color: #000000;
+    width: 100%;
+    height: 4px;
+	border: 10px;
+}
+
+
+/*Equipe*/
+
+
+#team-area{
+	margin: 80px auto;
+}
+
+#team-title{
+	max-width: 850px;
+	min-width: 320px;
+	width: 100%;
+	max-height:200px;
+	margin: 60px auto;
+	
+	font-family: italic;
+	font-size: 20px;
+	text-align: center;
+}
+
+#equipe-list{
+	position: relative;
+	max-width: 850px;
+	min-width: 320px;
+	margin: auto auto;
+	text-align: center;
+}
+#equipe-list li{
+	position: relative;
+	right: 20px;
+	max-width: 230px;
+	width: 100%;
+	height: 250px;
+	margin: auto auto;
+	display:inline-block;
+	text-align: center;
+}
+
+.team-img{
+	position: relative;
+	overflow: hidden;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	margin: auto auto;
+	border: 2px solid black;
+	
+}
+
+.team-img img{
+	width: 100%;
+	transform: scale(1);
+	transition: all 0.6s ease-out 0s;
+}
+
+.team-img img:hover{
+	transform: scale(1.2);
+}
+
+.team-equipe{
+	max-width: 300px;
+	max-height: 200px;
+}
+.team-equipe h3{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}	
+
+.team-equipe p {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	width: 222px;
+	height: 105px;
+	background-color: #C0C0C0;
+	padding: 10px;
+	margin-left: 0px;
+	border: 2px solid black;
+}
+/* cores */
+nav ul li a:hover{
+    color: red;
+}
+
+/*rodapé das páginas*/
+#rodape{
+    background-color: rgba(15, 68, 71, 1);
+    height: 150px;
+	width: 100%;
+	
+}
+
+#icones{
+	width: 204px;
+	position: relative;
+	top: 30px;
+
+	border-top: 2px solid white;
+
+	margin: auto auto;
+	display: flex;
+	justify-content: center;
+	
+}
+#icones li{
+	position: relative;
+	right: 18px;
+	margin: 0 1px;
+	border: 1px;  
+    display: inline-block;
+}
+
+#botao-img{
+	position: relative;
+	border: 1px;
+	float: right;
+	margin-top: -45px;
+	right: 15px;
+    max-width: 60px;
+}
+
+/*responsividade*/
+
+@media( max-width: 970px){
+	#text-banners{
+		margin:140px 0;
+	}
+	#banner-sobre h1{
+		width: 500px;
+	}
+}
+
+@media (max-width: 690px){
+	#banner-sobre-text{
+		margin:270px 0;
+	}
+	#banner-sobre h1{
+		width: 450px;
+		font-size: 50px;
+	}
+	#text-sobre{
+		font-size: 22px;
+	}
+	
+	#equipe-list li{
+		max-width: 200px;
+		height: 350px;
+	
+	}
+	.team-img{
+		height: 180px;
+		width: 180px;
+		
+	}
+	.team-equipe p{
+		font-size: 15px;
+		margin: auto auto;
+		height: 120px;
+		width: 190px;
+	}
+	.team-equipe h3{
+		font-weight: 700;
+		font-size: 15px;
+		margin: 5px 5px;
+	}
+	
+
+}
+
+@media (max-width: 540px){
+	#banner-sobre{
+		height: 140px;
+	}
+	#banner-sobre img{
+		width: 100%;
+		height: 180px;
+		
+	}
+	#banner-sobre-text{
+		overflow: hidden;/*esconde texto do titulo*/
+	}
+	
+	#menu li{
+		padding-right: 25px;
+		font-size: 18px;
+		display: inline-block
+	}
+	#menu {
+		margin-right: 12px;
+		margin-top: 20px;
+	}
+	
+	#text-sobre{
+		font-size: 20px;
+	}
+	
+	#team-area{
+		margin:30px auto;
+		width: 100%;
+	}
+	
+	#team-title{
+		margin: auto auto;
+		font-size: 15px;
+	}
+	.team-img{
+		height: 160px;
+		width: 160px;
+		margin: 10px 20px;
+	
+	}
+	.team-equipe h3{
+		font-weight: 700;
+		font-size: 15px;
+		margin: 5px 5px;
+	}
+	
+
+}
+
+@media(max-width: 380px){
+	#text-sobre{
+		font-size: 18px;
+	}
+	#banner-sobre img{
+		width: 100%;
+		height: 0;
+		
+	}
+	#banner-sobre{
+		height: 0;
+	}
+	
+	.team-img{
+		height: 150px;
+		width: 150px;
+		margin: 10px 24px;
+	
+	}
+	.team-equipe h3{
+		font-size: 15px;
+		margin: 5px 5px;
+	}
+	.team-equipe p {
+		padding: 10px;
+		width: 150px;
+		height: 150px;
+	}
+}

@@ -1,0 +1,404 @@
+/*Config gerais*/
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*cores dos links ao passar o mouse*/
+nav ul li a:hover{
+    color: red;
+}
+
+.text-not p a:hover{
+    color: red;
+}
+
+/*header*/
+#topo{
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+}
+#menu li{
+    font-family: Arial;
+    padding-right: 25px;
+    font-size: 18px;
+    display: inline-block
+}
+#menu {
+    list-style: none;
+    float: right;
+    margin-right: 18px;
+    margin-top: 38px;
+}
+#menu a{
+	font-weight: bold;
+}
+#logo{
+    height: 100%;
+    float: left;
+    width: 15%;
+}
+#logo img{
+    margin-left: 50px;
+    float: left;
+    width: 100px;
+}
+
+/*Página de notícias*/
+/*Banner de notícias*/
+#banner-noticias{
+    width: 100%;
+    height: 700px;
+}
+#banner-noticias img{
+    width: 100%;
+    height: 700px;
+}
+#text-banner-noticias{
+    width: 44%;
+    height: 60%;
+    top: 80px;
+    left: 740px;
+    font-family: italic;
+    position: absolute;
+}
+#text-banner-noticias p{
+    width: 600px;
+    color: white;
+    font-family: italic;
+    font-size: 90px;
+}
+
+/*corpo da página notícias*/
+#corpo-noticias{
+    width: 100%;
+    height: 1680px;
+}
+.titulo-noticias{
+    font-size: 45px;
+    padding-left: 76px;
+}
+.imgs-noticias{
+    width: 360px;
+    height: 210px;
+}
+.text-not{
+    height: 100px;
+    width: 360px;
+}
+.text-not p{
+    text-align: justify;
+}
+.text-not p a{
+    width: 100%;
+    color: rgba(48, 98, 171, 1);
+    font-size: 21px;
+    text-align: justify;
+}
+
+/*Destaques*/
+#destaques-noticias{
+    margin-top: 100px;
+    width: 100%;
+    height: 450px;
+}
+#destaques-noticias img{
+    width: 100%;
+    height: 100%;
+}
+#destaques-noticias ul li{
+    display: inline-block;
+    padding-left: 60px;
+}
+#destaques-noticias ul{
+    padding-left: 18px;
+}
+
+/*Carreira*/
+#carreira-noticias{
+    margin-top: 100px;
+    width: 100%;
+    height: 450px;
+}
+#carreira-noticias img{
+    width: 100%;
+    height: 100%;
+}
+
+#carreira-noticias ul li{
+    display: inline-block;
+    padding-left: 60px;
+}
+#carreira-noticias ul{
+    padding-left: 18px;
+}
+
+/*Tecnologia*/
+#tecnologia-noticias{
+    margin-top: 100px;
+    width: 100%;
+    height: 450px;
+}
+#tecnologia-noticias img{
+    width: 100%;
+    height: 100%;
+}
+
+#tecnologia-noticias ul li{
+    display: inline-block;
+    padding-left: 60px;
+}
+#tecnologia-noticias ul{
+    padding-left: 18px;
+}
+
+/*rodapé*/
+
+#rodape{
+	position: absolute;
+    bottom: 0;
+    background-color: rgba(15, 68, 71, 1);
+    height: 150px;
+    width: 100%;
+	top: 2500px;
+}
+
+#icones{
+    width: 204px;
+	position: relative;
+	top: 30px;
+	border-top: 2px solid white;
+	margin: auto auto;
+	display: flex;
+	justify-content: center;
+}
+#icones li{
+    position: relative;
+	right: 18px;
+	margin: 0 1px;
+	border: 1px;  
+    display: inline-block;
+}
+#botao-img{
+	cursor: pointer;
+	position: relative;
+	border: 1px;
+	float: right;
+	margin-top: -45px;
+	right: 15px;
+    max-width: 60px;
+}
+
+@media(max-width: 1300px){
+    #text-banner-noticias{
+        left: 660px;
+    }
+    #text-banner-noticias p{
+        width: 450px;
+        font-size: 75px;
+    }
+    .imgs-noticias{
+        width: 340px;
+        height: 200px;
+    }
+    .text-not{
+        height: 100px;
+        width: 320px;
+    }
+    #destaques-noticias ul{
+        padding-left: 0;
+    }
+    #destaques-noticias ul li{
+        padding-left: 60px;
+    }
+    #carreira-noticias ul{
+        padding-left: 0;
+    }
+    #carreira-noticias ul li{
+        padding-left: 60px;
+    }
+    #tecnologia-noticias ul{
+        padding-left: 0;
+    }
+    #tecnologia-noticias ul li{
+        padding-left: 60px;
+    }
+    
+}
+@media(max-width: 1100px){
+    #text-banner-noticias{
+        left: 580px;
+    }
+    #text-banner-noticias p{
+        width: 450px;
+        font-size: 65px;
+    }
+    .imgs-noticias{
+        width: 290px;
+        height: 170px;
+    }
+    .text-not{
+        width: 210px;
+    }
+    #destaques-noticias ul li{
+        padding-left: 40px;
+    }
+    #carreira-noticias ul li{
+        padding-left: 40px;
+    }
+    #tecnologia-noticias ul li{
+        padding-left: 40px;
+    }
+    .text-not p a{
+        font-size: 19px;
+    }
+}
+@media(max-width: 970px){
+    #banner-noticias img{
+        height: 650px;
+    }
+    #text-banner-noticias{
+        left: 400px;
+    }
+    #text-banner-noticias p{
+        width: 370px;
+        font-size: 60px;
+    }
+    .imgs-noticias{
+        width: 270px;
+        height: 160px;
+    }
+    .text-not{
+        width: 190px;
+    }
+    #destaques-noticias ul li{
+        padding-left: 30px;
+    }
+    #carreira-noticias ul li{
+        padding-left: 30px;
+    }
+    #tecnologia-noticias ul li{
+        padding-left: 30px;
+    }
+    .text-not p a{
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 850px){
+    .imgs-noticias{
+        width: 250px;
+        height: 150px;
+    }
+    .text-not{
+        width: 170px;
+    }
+    #destaques-noticias ul li{
+        padding-left: 20px;
+    }
+    #carreira-noticias ul li{
+        padding-left: 20px;
+    }
+    #tecnologia-noticias ul li{
+        padding-left: 20px;
+    }
+    .text-not p a{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 770px){
+    #banner-noticias img{
+        height: 600px;
+    }
+    #text-banner-noticias{
+        left: 350px;
+    }
+    #text-banner-noticias p{
+        width: 340px;
+        font-size: 55px;
+    }
+    .imgs-noticias{
+        width: 220px;
+        height: 130px;
+    }
+    .text-not{
+        width: 190px;
+    }
+    #destaques-noticias ul li{
+        padding-left: 20px;
+    }
+    #carreira-noticias ul li{
+        padding-left: 20px;
+    }
+    #tecnologia-noticias ul li{
+        padding-left: 20px;
+    }
+    .text-not p a{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 700px){
+    #text-banner-noticias{
+        margin-top: 90px;
+    }
+    #text-banner-noticias{
+        left: 300px;
+    }
+    #text-banner-noticias p{
+        width: 320px;
+        font-size: 53px;
+    }
+    .imgs-noticias{
+        width: 200px;
+        height: 120px;
+    }
+    .text-not{
+        width: 170px;
+    }
+    #destaques-noticias ul li{
+        padding-left: 10px;
+    }
+    #carreira-noticias ul li{
+        padding-left: 10px;
+    }
+    #tecnologia-noticias ul li{
+        padding-left: 10px;
+    }
+    .text-not p a{
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 640px){
+    #banner-noticias img{
+        height: 530px;
+    }
+    #text-banner-noticias{
+        left: 280px;
+    }
+    #text-banner-noticias p{
+        width: 300px;
+        font-size: 50px;
+    }
+    #banner-noticias{
+        height: 600px;
+    }
+}
+
+@media(max-width: 590px){
+    #banner-noticias img{
+        height: 510px;
+    }
+    #text-banner-noticias{
+        left: 100px;
+    }
+}

@@ -1,0 +1,352 @@
+/*Config gerais*/
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(43, 58, 58, 0.850);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*header*/
+#topo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: white;
+}
+
+#menu li{
+    font-family: Arial;
+    padding-right: 25px;
+    font-size: 18px;
+    display: inline-block
+}
+#menu {
+    list-style: none;
+    float: right;
+    margin-right: 18px;
+    margin-top: 38px;
+}
+#logo{
+    height: 100%;
+    float: left;
+    width: 15%;
+}
+#logo img{
+    margin-left: 50px;
+    float: left;
+    width: 100px;
+}
+
+/*Corpo da pagina*/
+#corpo{
+    position: absolute;
+    background-color: white;
+    top: 270px;
+    width: 700px;
+    min-height: 90vh;
+    /*top: 200px;*/
+    padding: 1rem;
+}
+
+#linha{
+    position: absolute;
+    background-color: black;
+    margin-left: 200px;
+    width: 270px;
+    height: 1px;
+    display: flex;
+    margin-top: 100px;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form label{
+    font-size: 23px;
+    margin-left: 60px;
+    height: 95px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.a{
+    color: red;
+}
+
+input{
+    margin-top: 2%;
+    width: 90%;
+    outline: none;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+}
+
+#botao{
+    margin-left: 60px;
+    margin-top: 10px;
+    width: 82%;
+    background-color:rgb(77, 177, 92);
+    cursor: pointer;
+    font-size: 23px;
+    color: white;
+    height: 50px;
+}
+
+/*Cores dos links ao passar o mouse sobre*/
+nav ul li a:hover{
+    color: red;
+}
+
+/*rodapé das páginas*/
+#rodape{
+    position: absolute;
+    background-color: rgba(15, 68, 71, 1);
+    height: 150px;
+    width: 100%;
+    top: 1100px;
+}
+
+#icones{
+    display: flex;
+    margin-top: 50px;
+    padding-left: 5px;
+    justify-content: center;
+}
+
+#icones li{
+    padding-right: 5px;
+    display: inline-block;
+}
+#linha-footer{
+    position: absolute;
+    background-color: white;
+    margin-top: 0px;
+    width: 158px;
+    height: 2px;
+}
+
+#botao-img{
+    position: absolute;
+    right: 40px;
+    width: 60px;
+    cursor: pointer;
+}
+
+@media (max-width: 950px){
+    #corpo{
+        position: absolute;
+        background-color: white;
+        top: 220px;
+        width: 650px;
+        min-height: 90vh;
+        padding: 1rem;
+
+    }
+
+    #linha{
+        margin-left: 175px;
+    }
+
+    #rodape{
+        top: 1040px;
+    }
+}
+
+
+
+@media (max-width: 750px){
+    #corpo{
+        position: absolute;
+        background-color: white;
+        top: 260px;
+        width: 450px;
+        min-height: 90vh;
+        /*top: 200px;*/
+        padding: 1rem;
+    }
+    
+    #rodape{
+        top: 1050px;
+    }
+
+    #menu {
+        position: absolute;
+        list-style: none;
+        float: right;
+        margin-right: 18px;
+        margin-top: 110px;
+    }
+    #topo{
+        height: 150px;
+    }
+
+    #linha{
+        margin-left: 80px;
+    }
+    
+    form label{
+        margin-left: 40px;
+    }
+    
+    #botao{
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 630px){
+    #corpo{
+        position: absolute;
+        background-color: white;
+        margin-right: 30px;
+        margin-left: 25px;
+        top: 280px;
+        width: 350px;
+        min-height: 5vh;
+        /*top: 200px;*/
+        padding: 1rem;
+    }
+
+    #topo{
+        height: 150px;
+    }
+    p{
+        font-size: 25px;
+    }
+
+    #menu {
+        position: absolute;
+        list-style: none;
+        float: right;
+        margin-right: 18px;
+        margin-top: 110px;
+    }
+
+    #linha{
+        margin-top: 75px;
+        margin-left: 90px;
+        width: 140px;
+    }
+    
+    form label{
+        font-size: 17px;
+        margin-left: 40px;
+        height: 95px;
+        display: flex;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    
+    input{
+        font-size: 15px;
+    }
+
+    #botao{
+        margin-bottom: 0.5rem;
+        height: 2.5rem;
+        margin-left: 40px;
+        width: 79%;
+        cursor: pointer;
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 480px){
+	#corpo{
+        position: absolute;
+        background-color: white;
+        margin-right: 30px;
+        margin-left: 25px;
+        top: 300px;
+        width: 250px;
+        min-height: 0vh;
+        /*top: 200px;*/
+        padding: 1rem;
+    }
+
+    #menu {
+        position: absolute;
+        list-style: none;
+        float: right;
+        margin-right: 18px;
+        margin-top: 110px;
+    }
+
+    #topo{
+        height: 170px;
+    }
+
+    #linha{
+        margin-top: 70px;
+        margin-left: 55px;
+        width: 110px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    form label{
+        font-size: 14px;
+        margin-left: 20px;
+        height: 95px;
+        display: flex;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+
+    input{
+        font-size: 11px;
+    }
+
+    #botao{
+        margin-bottom: 0.5rem;
+        height: 2.5rem;
+        margin-left: 20px;
+        width: 82%;
+        cursor: pointer;
+        font-size: 12px;
+    }
+
+    #rodape{
+        top: 1020px;
+    }
+}
+
+@media (max-width: 650px){
+
+    #rodape{
+        top: 1000px;
+    }
+}

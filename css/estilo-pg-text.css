@@ -1,0 +1,296 @@
+/*Config gerais*/
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+*{
+	box-sizing: border-box;
+}
+/*header*/
+#topo{
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+}
+#menu li{
+    font-family: Arial;
+    padding-right: 25px;
+    font-size: 18px;
+    display: inline-block
+}
+#menu {
+    list-style: none;
+    float: right;
+    margin-right: 18px;
+    margin-top: 38px;
+}
+#menu a{
+	font-weight: bold;
+}
+#logo{
+    height: 100%;
+    float: left;
+    width: 15%;
+}
+#logo img{
+    margin-left: 50px;
+    float: left;
+    width: 100px;
+}
+
+/*Banner*/
+#banners{
+	background-color: white;
+	width: 100%;
+	height: 390px;
+}
+#banners img{
+    width: 100%;
+    height: 390px;
+}
+#text-banners{
+	font-family: italic;
+    position: absolute;
+    top: 130px;
+    left: 40px;
+	margin:170px 0;
+}
+#banners h1{
+    position: absolute;
+    width: 1000px;
+    color: white;
+    font-size: 60px;
+}
+
+/*Corpo de texto*/
+#area-main{
+	position:relative;
+	
+	max-width: 100%;
+	min-width: 300px;
+	max-height: 500px;
+}
+
+#area-text{
+	max-width: 855px;
+	border: 2px;
+	font-size: 24px;
+    text-align: justify;
+    width: 100%;
+	padding: 30px;
+	margin: 60px auto;
+	
+}	
+
+#area-text h2{
+	margin-top: 60px;
+	font-size: 24px;
+}
+
+/* cores hover*/
+nav ul li a:hover{
+    color: red;
+}
+
+#area-text-queTI a:hover{
+    color: red;
+}
+
+/*rodapé das páginas*/
+#rodape{
+    background-color: rgba(15, 68, 71, 1);
+    height: 150px;
+	width: 100%;
+	
+}
+
+#icones{
+	width: 204px;
+	position: relative;
+	top: 30px;
+
+	border-top: 2px solid white;
+
+	margin: auto auto;
+	display: flex;
+	justify-content: center;
+	
+}
+#icones li{
+	position: relative;
+	right: 18px;
+	margin: 0 1px;
+	border: 1px;  
+    display: inline-block;
+}
+
+#botao-img{
+	cursor: pointer;
+	position: relative;
+	border: 1px;
+	float: right;
+	margin-top: -45px;
+	right: 15px;
+    max-width: 60px;
+}
+
+/*configurações especificas*/
+
+/*Cursos*/
+
+#confira-cursos{
+    padding-top: 15px;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: -15px;
+}
+#confira-cursos a{
+    color: rgba(48, 98, 171, 1);
+}
+
+/*O que é TI?*/
+
+#area-text-queTI a{
+	font-weight: bolder;
+}
+
+#area-text-queTI{
+	max-width: 870px;
+	border: 2px;
+	font-size: 24px;
+    text-align: justify;
+    width: 100%;
+	padding: 30px;
+	margin: 60px auto;
+	
+}
+
+/*cargos*/
+#area-main{
+    width: 100%;
+    height: 1680px;
+}
+
+#titulo-cargos{
+	margin: 30px 10px 20px;
+    padding-top: 150px;
+    text-align: center;
+    font-size: 27px;
+}
+
+#tabela-cargos{
+	margin: auto 15px;
+}
+table{
+    background-color: white;
+    font-size: 22px;
+    margin: auto auto;
+}
+
+#confira-table a{
+    color: rgba(48, 98, 171, 1);
+    font-size: 22px;
+}
+#confira-table ul{
+    padding: 50px;
+    text-align: justify;
+	width: 900px;
+	margin: 10px auto 50px;
+}
+
+/*reponsividade*/
+@media( max-width: 970px){
+	#text-banners{
+		margin:140px 0;
+	}
+	#banners h1{
+		width: 500px;
+	}
+}
+
+@media (max-width: 690px){
+	#text-banners{
+		margin:220px 0;
+	}
+	#banners h1{
+		width: 450px;
+		font-size: 50px;
+	}
+	#area-text{
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 540px){
+	#banners{
+		height: 160px;
+	}
+	#banners img{
+		width: 100%;
+		height: 180px;
+		
+	}
+	#text-banners{
+		display: none;
+	}
+	
+	#menu li{
+		padding-right: 25px;
+		font-size: 18px;
+		display: inline-block
+	}
+	#menu {
+		margin-right: 12px;
+		margin-top: 20px;
+	}
+	
+	#area-text{
+		font-size: 20px;
+	}	
+}
+
+/*responsividade queTI*/
+
+@media (max-width: 690px) {	
+	#area-text-queTI{
+		font-size: 22px;
+		margin-top: 100px;
+	}
+}
+@media (max-width: 400px){
+	#area-text-queTI{
+		font-size: 20px;
+	}
+}
+
+/*responsividade cargos*/
+
+@media (max-width: 600px){
+	#titulo-cargos{
+		font-size: 25px;
+	}
+	table{
+		font-size: 20px;
+	}
+	#confira-table a{
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 400px){
+	#tabela-cargos{
+		margin: auto 0;
+	}
+	#titulo-cargos{
+		font-size: 22px;
+	}
+	table{
+		font-size: 16px;
+	}
+}

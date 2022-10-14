@@ -1,0 +1,400 @@
+/*Config gerais*/
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Cookies*/
+.cookies-card{
+    font-family: sans-serif;
+    text-align: justify;
+    position: fixed;
+    bottom: 0;
+    left: 1em;
+    right: 0;
+    width: 350px;
+    background-color: #242424;
+    padding: 1.5em;
+}
+.cookies-card * {
+    color: #fff;
+}
+.title{
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+}
+.info{
+    line-height: 1.4em;
+    letter-spacing: 0.4px;
+    margin-bottom: 2em;
+}
+.info a{
+    text-decoration: underline;
+}
+.option{
+    text-decoration: underline;
+}
+.option:hover{
+    color: #3c9e66;
+}
+.info a:hover{
+    color: #3c9e66;
+}
+.btn{
+    border: none;
+    outline: none;
+    padding: 0.8em 1.5em;
+    background-color: black;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor:pointer;
+    transition: background-color 0.4s;
+}
+.btn:hover{
+    background-color: #3c9e66;
+}
+.btnCancel{
+    border: none;
+    outline: none;
+    padding: 0.8em 1.5em;
+    background-color: black;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor:pointer;
+    transition: background-color 0.4s;
+}
+.btnCancel:hover{
+    background-color: #3c9e66;
+}
+/*header*/
+#topo{
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+}
+#menu li{
+    font-family: Arial;
+    padding-right: 25px;
+    font-size: 18px;
+    display: inline-block
+}
+#menu {
+    list-style: none;
+    float: right;
+    margin-right: 18px;
+    margin-top: 38px;
+}
+#menu a{
+	font-weight: bold;
+}
+#logo{
+    height: 100%;
+    float: left;
+    width: 15%;
+}
+#logo img{
+    margin-left: 50px;
+    float: left;
+    width: 100px;
+}
+
+/*Banner-home*/
+#banner img{
+    width: 100%;
+    height: 770px;
+}
+#banner{
+    width: 100%;
+    height: 770px;
+}
+#text-banner{
+    height: 250px;
+    width: 70%;
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    font-family: italic;
+}
+#p1{
+    width: 800px;
+    color: white;
+    font-family: italic;
+    font-size: 90px;
+}
+#p2{
+    top: 140px;
+    width: 1000px;
+    position: absolute;
+    color: rgb(190, 55, 55);
+    font-size: 40px;
+    padding-bottom: 60px;
+}
+
+/*Corpo da página*/
+#conteudo{
+    padding-top: 50px;
+    margin-left: 100px;
+    height: 750px;
+    width: 85%;
+}
+/*Introdução-home*/
+#introducao{
+    font-size: 24px;
+    text-align: justify;
+    float:left;
+    width: 50%;
+    height: 700px;
+}
+#introducao ul{
+    padding-top: 25px;
+}
+#linha{
+    top: 928px;
+    left: 790px;
+    position: absolute;
+    height: 605px;
+    width: 2px;
+    background-color: black;
+}
+#topicos li a{
+    color: rgba(48, 98, 171, 1);
+}
+
+/*noticias do home*/
+#noticias-home{
+    text-align: justify;
+    float: right;
+    width: 30.5%;
+    height: 795px;
+}
+#noticias-home img{
+    width: 100%;
+    height: 200px;
+}
+#img-ifood{
+    padding-top: 28px;
+}
+#noticias-home p{
+    top: -20px;
+    position: relative;
+    font-size: 20px;
+    width: 100%;
+}
+#noticias-home p a{
+    color: rgba(48, 98, 171, 1);
+}
+aside ul li a{
+    color: rgba(48, 98, 171, 1);
+}
+#noticias-home ul li{
+    text-decoration: none;
+    font-size: 20px;
+}
+#ifood{
+    padding-top: 30px;
+}
+
+/*cores dos links ao passar o mouse*/
+nav ul li a:hover{
+    color: red;
+}
+#topicos li a:hover{
+    color: red;
+}
+#noticias-home p a:hover{
+    color: red;
+}
+#noticias-home ul li a:hover{
+    color: red;
+}
+
+/*rodapé*/
+
+#rodape{
+	position: absolute;
+    bottom: 0;
+    background-color: rgba(15, 68, 71, 1);
+    height: 150px;
+    width: 100%;
+	top: 1700px;
+}
+
+#icones{
+    width: 204px;
+	position: relative;
+	top: 30px;
+	border-top: 2px solid white;
+	margin: auto auto;
+	display: flex;
+	justify-content: center;
+}
+#icones li{
+    position: relative;
+	right: 18px;
+	margin: 0 1px;
+	border: 1px;  
+    display: inline-block;
+}
+#botao-img{
+	cursor: pointer;
+	position: relative;
+	border: 1px;
+	float: right;
+	margin-top: -45px;
+	right: 15px;
+    max-width: 60px;
+}
+
+/*reponsividade*/
+@media (max-width: 1300px){
+    #linha{
+        display: none;
+    }
+}
+
+@media (max-width: 950px){
+    #p1{
+        width: 730px;
+        font-size: 80px;
+    }
+    #p2{
+        width: 800px;
+        font-size: 35px;
+    }
+    #banner img{
+        height: 740px;
+    }
+    #introducao{
+        font-size: 21px;
+        height: 670px;
+    }
+    #introducao ul{
+        padding-top: 25px;
+    }
+    #noticias-home img{
+        height: 180px;
+    }
+    #noticias-home p{
+        font-size: 19px;
+    }
+    #noticias-home ul li{
+        font-size: 19px;
+    }
+    #conteudo{
+        margin-left: 90px;
+    }
+}
+
+@media (max-width: 750px){
+    #p1{
+        width: 600px;
+        font-size: 75px;
+    }
+    #p2{
+        width: 600px;
+        font-size: 28px;
+    }
+    #banner img{
+        height: 700px;
+    }
+    #introducao{
+        font-size: 19px;
+        height: 720px;
+    }
+    #noticias-home img{
+        height: 160px;
+    }
+    #noticias-home p{
+        font-size: 18px;
+    }
+    #noticias-home ul li{
+        font-size: 18px;
+    }
+    #conteudo{
+        margin-left: 70px;
+    }
+}
+
+@media (max-width: 720px){
+    #p1{
+        width: 550px;
+        font-size: 73px;
+        top: 100px;
+    }
+    #introducao{
+        height: 780px;
+    }
+    #p2{
+        top: 140px;
+        width: 580px;
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 630px){
+    #p1{
+        width: 500px;
+        font-size: 70px;
+    }
+    #p2{
+        width: 400px;
+        font-size: 26px;
+    }
+    #banner img{
+        height: 660px;
+    }
+    #introducao{
+        font-size: 17px;
+        height: 770px;
+    }
+    #noticias-home img{
+        height: 120px;
+    }
+    #noticias-home p{
+        font-size: 16px;
+    }
+    #noticias-home ul li{
+        font-size: 16px;
+    }
+    #conteudo{
+        margin-left: 50px;
+    }
+}
+
+@media(max-width: 600px){
+	#p1{
+        margin-top: 100px;
+        width: 450px;
+        font-size: 65px;
+    }
+    #p2{
+        margin-top: 40px;
+        width: 400px;
+        font-size: 24px;
+    }
+    #banner img{
+        height: 620px;
+    }
+    #introducao{
+        font-size: 16px;
+        height: 780px;
+    }
+    #noticias-home img{
+        height: 110px;
+    }
+    #noticias-home p{
+        font-size: 14px;
+    }
+    #noticias-home ul li{
+        font-size: 14px;
+    }
+    #conteudo{
+        margin-left: 45px;
+    }
+}
