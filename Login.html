@@ -40,7 +40,7 @@
             </label>
 
             <button type="submit" id="botao">Login</button>
-            <a id="cadastro" href="cadastro.html" target="_blank">Cadastre-se</a>
+            <a id="cadastro" href="cadastro.html">Cadastre-se</a>
         </form>
     </div>
 
@@ -64,7 +64,10 @@
 
         //função de voltar ao topo
         function voltarTopo(){
-            window.scrollTo(0, 0)
+            window.scroll({
+                top: 0,
+                behavior: "smooth",
+            });
         }
     </script>
 <!--<script src="js/Login.js"></script>-->

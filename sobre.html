@@ -109,7 +109,10 @@
     var botao = window.document.getElementById('botao-img')
     botao.addEventListener('click', voltarTopo)
     function voltarTopo(){
-        window.scrollTo(0, 0)
+        window.scroll({
+            top: 0,
+            behavior: "smooth",
+        });
     }
 </script>
 </body>

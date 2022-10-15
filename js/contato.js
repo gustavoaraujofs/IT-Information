@@ -11,6 +11,9 @@ function fn(){
 
 //função de voltar ao topo
 function voltarTopo(){
-    window.scrollTo(0, 0)
+    window.scroll({
+        top: 0,
+        behavior: "smooth",
+    });
 }
 

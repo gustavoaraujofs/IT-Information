@@ -17,10 +17,10 @@
             <ul id="menu">
                 <li><b><a href="Home.html">Home</a></b></li>
                 <li><b><a href="sobre.html">Sobre</a></b></li>
-                <li><b><a href="noticias.html" target="_blank">Notícias</a></b></li>
+                <li><b><a href="noticias.html">Notícias</a></b></li>
                 <li><b><a href="contato.html">Contato</a></b></li>
-                <li><b><a href="login.html" target="blank">Login</a></b></li>
-                <li><b><a href="galeria.html" target="_blank">Galeria</a></b></li>
+                <li><b><a href="login.html">Login</a></b></li>
+                <li><b><a href="galeria.html">Galeria</a></b></li>
             </ul>
         </nav>
     </header>
@@ -68,9 +68,11 @@
 
         //função de voltar ao topo
         function voltarTopo(){
-            window.scrollTo(0, 0)
+            window.scroll({
+                top: 0,
+                behavior: "smooth",
+            });
         }
     </script>
-<!--<script src="js/Login.js"></script>-->
 </body>
 </html>
